@@ -602,10 +602,14 @@ version = "0.1.0"
 source = { virtual = "apps/projects" }
 dependencies = [
     { name = "gradio" },
+    { name = "mymath" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "gradio", specifier = ">=5.8.0" }]
+requires-dist = [
+    { name = "gradio", specifier = ">=5.8.0" },
+    { name = "mymath", virtual = "packages/mymath" },
+]
 
 [[package]]
 name = "pydantic"
