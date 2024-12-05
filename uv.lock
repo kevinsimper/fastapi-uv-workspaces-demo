@@ -880,10 +880,14 @@ version = "0.1.0"
 source = { virtual = "apps/todos" }
 dependencies = [
     { name = "fastapi", extra = ["standard"] },
+    { name = "mymath" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "fastapi", extras = ["standard"], specifier = ">=0.115.6" }]
+requires-dist = [
+    { name = "fastapi", extras = ["standard"], specifier = ">=0.115.6" },
+    { name = "mymath", editable = "packages/mymath" },
+]
 
 [[package]]
 name = "tomlkit"

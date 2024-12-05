@@ -1,13 +1,14 @@
 from typing import Union
 
 from fastapi import FastAPI
+from mymath.add import addition
 
 app = FastAPI()
 
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Hello": "World" + str(addition(1, 2))}
 
 
 @app.get("/items/{item_id}")
