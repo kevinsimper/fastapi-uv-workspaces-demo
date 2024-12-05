@@ -445,7 +445,7 @@ wheels = [
 [[package]]
 name = "mymath"
 version = "0.1.0"
-source = { virtual = "packages/mymath" }
+source = { editable = "packages/mymath" }
 
 [[package]]
 name = "numpy"
@@ -608,7 +608,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "gradio", specifier = ">=5.8.0" },
-    { name = "mymath", virtual = "packages/mymath" },
+    { name = "mymath", editable = "packages/mymath" },
 ]
 
 [[package]]
